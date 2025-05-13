@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from '../components/Header';
-import Hero from '../components/Hero';  
-import GameRecommendations from '../components/gameRecommendations';
-import Features from '../components/features';
-import Footer from '../components/footer';
-import '../css/Principal.css'; // Asegúrate de que la ruta sea correcta
+import Hero from '../components/Hero';
+import GameRecommendations from '/src/components/GameRecommendations';
+import Features from '/src/components/Features';
+import Footer from '/src/components/Footer';
+import '../css/Principal.css';
 
 function Principal() {
   return (
