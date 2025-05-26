@@ -9,8 +9,8 @@ function Header() {
     <header className="header">
       <div className="container header-container">
         <div className="logo">
-          <span className="logo-icon">🎮</span>
-          <h1>GameRecs</h1>
+          <span className="logo-icon">★</span>
+          <h1>GameMatch</h1>
         </div>
 
         <button className="mobile-menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
@@ -22,22 +22,22 @@ function Header() {
         <nav className={`nav ${menuOpen ? "open" : ""}`}>
           <ul>
             <li>
-              <a href="#home">Inicio</a>
+              <a href="#inicio">Inicio</a>
             </li>
             <li>
-              <a href="#recommendations">Recomendaciones</a>
+              <a href="#recomendaciones">Recomendaciones</a>
             </li>
             <li>
-              <a href="#genres">Géneros</a>
-            </li>
-            <li>
-              <a href="#platforms">Plataformas</a>
-            </li>
-            <li>
-              <a href="#blog">Blog</a>
+              <a href="#juegos-populares">Juegos Populares</a>
             </li>
           </ul>
         </nav>
+
+        <div className="header-icons">
+          <a href="#profile" className="profile-icon" aria-label="Perfil">
+            <span>👤</span>
+          </a>
+        </div>
       </div>
     </header>
   )

@@ -1,23 +1,20 @@
-import React from 'react';
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import GameRecommendations from '/src/components/GameRecommendations';
-import Features from '/src/components/Features';
-import Footer from '/src/components/Footer';
-import '../css/Principal.css';
+import "../css/Principal.css"
+import Header from "../components/Header"
+import Hero from "../components/Hero"
+import TrendingGames from "../components/TrendingGames"
 
-function Principal() {
+function App() {
   return (
     <div className="app">
-      <Header />
-      <main>
-        <Hero />
-        <GameRecommendations />
-        <Features />
-      </main>
-      <Footer />
+      <div className="background-overlay">
+        <Header />
+        <main>
+          <Hero />
+          <TrendingGames />
+        </main>
+      </div>
     </div>
-  );
+  )
 }
 
-export default Principal;
+export default App

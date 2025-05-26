@@ -1,22 +1,14 @@
 function Hero() {
   return (
-    <section className="hero" id="home">
-      <div className="container">
+    <section className="hero">
+      <div className="container hero-container">
         <div className="hero-content">
-          <h1>Descubre Tu Próxima Aventura Gaming</h1>
-          <p>Recomendaciones personalizadas de videojuegos basadas en tus gustos y estilo de juego</p>
-          <div className="hero-buttons">
-            <button className="btn btn-primary">Explorar Juegos</button>
-            <button className="btn btn-secondary">Ver Tendencias</button>
-          </div>
+          <h1>Descubre tu próximo juego favorito</h1>
+          <p>Explora recomendaciones personalizadas y encuentra joyas ocultas entre miles de títulos.</p>
+          <button className="cta-button">Descubre tu nuevo Juego</button>
         </div>
         <div className="hero-image">
-          <div className="controller-icon">🎮</div>
-          <div className="game-cards">
-            <div className="game-card card-1"></div>
-            <div className="game-card card-2"></div>
-            <div className="game-card card-3"></div>
-          </div>
+          <img src="/images/hero-characters.png" alt="Personajes de videojuegos populares" />
         </div>
       </div>
     </section>
