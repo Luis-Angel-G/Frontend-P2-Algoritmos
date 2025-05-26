@@ -11,8 +11,6 @@ function App() {
     <div className="app">
       <div className="background-overlay">
         <Header />
-        <Login onLogin={user => console.log("Usuario logueado:", user)} />
-        <SignUp />
         <main>
           <Hero />
           <TrendingGames />
