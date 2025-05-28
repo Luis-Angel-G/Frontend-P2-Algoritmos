@@ -393,20 +393,25 @@ img {
 
 /* Authentication Styles */
 .auth-container {
+  position: fixed;
+  inset: 0;
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--background-color);
-  position: relative;
-  overflow: hidden;
+  z-index: 1000;
+  overflow: auto;
 }
 
 .auth-background {
-  position: relative;
-  width: 100%;
+  position: fixed;
+  inset: 0;
+  width: 100vw;
   height: 100vh;
   background: linear-gradient(135deg, rgba(147, 51, 234, 0.1), rgba(59, 130, 246, 0.1));
+  z-index: 0;
 }
 
 .auth-background::before {
@@ -433,10 +438,10 @@ img {
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
-  padding: 3rem;
+  padding: 1rem;
   width: 100%;
   max-width: 450px;
-  margin: 2rem;
+  margin: auto;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
