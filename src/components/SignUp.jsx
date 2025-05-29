@@ -10,28 +10,13 @@ function SignUp() {
     correo: "",
     contraseña: "",
     juegos_favoritos: [],
-    generos_favoritos: [],
-    plataformas_favoritas: [],
-    prefiere_multijugador: false,
+    juegos_interesados: [],
+    juegos_no_gustados: [],
+    juegos_jugados: [],
   });
   const [msg, setMsg] = useState("");
   const [loading, setLoading] = useState(false);
   const [games, setGames] = useState([]);
-  const [genres] = useState([
-    { value: "Acción", label: "Acción" },
-    { value: "Aventura", label: "Aventura" },
-    { value: "Deportes", label: "Deportes" },
-    { value: "Estrategia", label: "Estrategia" },
-    { value: "RPG", label: "RPG" },
-    { value: "Simulación", label: "Simulación" },
-    { value: "Shooter", label: "Shooter" },
-  ]);
-  const [platforms] = useState([
-    { value: "PC", label: "PC" },
-    { value: "PlayStation", label: "PlayStation" },
-    { value: "Xbox", label: "Xbox" },
-    { value: "Nintendo Switch", label: "Nintendo Switch" },
-  ]);
 
   useEffect(() => {
     const fetchGames = async () => {
@@ -77,9 +62,9 @@ function SignUp() {
         correo: form.correo,
         contraseña: form.contraseña,
         juegos_favoritos: form.juegos_favoritos,
-        juegos_interesados: [],
-        juegos_no_gustados: [],
-        juegos_jugados: [],
+        juegos_interesados: form.juegos_interesados,
+        juegos_no_gustados: form.juegos_no_gustados,
+        juegos_jugados: form.juegos_jugados,
         amigos: [],
       };
 
@@ -88,38 +73,11 @@ function SignUp() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(userData),
       });
-
       if (res.ok) {
-        setMsg("Usuario registrado correctamente");
-
-        const preferencesData = {
-          generos_favoritos: form.generos_favoritos,
-          plataformas_favoritas: form.plataformas_favoritas,
-          prefiere_multijugador: form.prefiere_multijugador,
-        };
-
-        const prefRes = await fetch(`http://127.0.0.1:5050/api/v1/users/${form.correo}/preferences`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(preferencesData),
-        });
-
-        if (!prefRes.ok) {
-          setMsg("Usuario registrado, pero error al guardar preferencias");
-        }
-
-        setForm({
-          nombre: "",
-          apellido: "",
-          correo: "",
-          contraseña: "",
-          juegos_favoritos: [],
-          generos_favoritos: [],
-          plataformas_favoritas: [],
-          prefiere_multijugador: false,
-        });
+        setMsg("Cuenta creada correctamente");
       } else {
-        setMsg("Error al registrar usuario");
+        const errorData = await res.json();
+        setMsg(`Error al crear cuenta: ${errorData.message || "Error desconocido"}`);
       }
     } catch (error) {
       setMsg("Error de conexión");
@@ -192,7 +150,7 @@ function SignUp() {
       <div className="form-section">
         <h3>Preferencias de Juego</h3>
         <div className="form-group">
-          <label htmlFor="juegos_favoritos">Juegos Favoritos (opcional)</label>
+          <label htmlFor="juegos_favoritos">Juegos Favoritos </label>
           <Select
             id="juegos_favoritos"
             name="juegos_favoritos"
@@ -206,44 +164,46 @@ function SignUp() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="generos_favoritos">Géneros Favoritos (opcional)</label>
+          <label htmlFor="juegos_interesados">Juegos Interesados </label>
           <Select
-            id="generos_favoritos"
-            name="generos_favoritos"
+            id="juegos_interesados"
+            name="juegos_interesados"
             isMulti
-            options={genres}
-            value={genres.filter((genre) => form.generos_favoritos.includes(genre.value))}
-            onChange={(selected) => handleSelectChange("generos_favoritos", selected)}
-            placeholder="Selecciona tus géneros favoritos"
+            options={games}
+            value={games.filter((game) => form.juegos_interesados.includes(game.value))}
+            onChange={(selected) => handleSelectChange("juegos_interesados", selected)}
+            placeholder="Selecciona los juegos que te interesan"
             className="form-select"
             classNamePrefix="react-select"
           />
         </div>
         <div className="form-group">
-          <label htmlFor="plataformas_favoritas">Plataformas Favoritas (opcional)</label>
+          <label htmlFor="juegos_no_gustados">Juegos No Gustados </label>
           <Select
-            id="plataformas_favoritas"
-            name="plataformas_favoritas"
+            id="juegos_no_gustados"
+            name="juegos_no_gustados"
             isMulti
-            options={platforms}
-            value={platforms.filter((platform) => form.plataformas_favoritas.includes(platform.value))}
-            onChange={(selected) => handleSelectChange("plataformas_favoritas", selected)}
-            placeholder="Selecciona tus plataformas favoritas"
+            options={games}
+            value={games.filter((game) => form.juegos_no_gustados.includes(game.value))}
+            onChange={(selected) => handleSelectChange("juegos_no_gustados", selected)}
+            placeholder="Selecciona los juegos que no te gustan"
             className="form-select"
             classNamePrefix="react-select"
           />
         </div>
         <div className="form-group">
-          <label>
-            <input
-              type="checkbox"
-              name="prefiere_multijugador"
-              checked={form.prefiere_multijugador}
-              onChange={handleChange}
-              className="form-checkbox"
-            />
-            Prefiero juegos multijugador
-          </label>
+          <label htmlFor="juegos_jugados">Juegos Jugados </label>
+          <Select
+            id="juegos_jugados"
+            name="juegos_jugados"
+            isMulti
+            options={games}
+            value={games.filter((game) => form.juegos_jugados.includes(game.value))}
+            onChange={(selected) => handleSelectChange("juegos_jugados", selected)}
+            placeholder="Selecciona los juegos que has jugado y no los selecionado anteriormente"
+            className="form-select"
+            classNamePrefix="react-select"
+          />
         </div>
       </div>
 
