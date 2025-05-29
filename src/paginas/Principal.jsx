@@ -3,12 +3,13 @@ import { useState } from "react"
 import Login from "../components/Login"
 import SignUp from "../components/SignUp"
 import Header from "../components/Header"
-import Hero from "../components/Hero"
+import Hero from "../components/hero"
 import TrendingGames from "../components/TrendingGames"
 import "../css/Principal.css"
 
+
 function Principal() {
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState({ name: "Test User" })
   const [showSignUp, setShowSignUp] = useState(false)
 
   const navigate = useNavigate()
@@ -99,9 +100,9 @@ function Principal() {
             <br />
             La forma más fácil y divertida de encontrar tu match gamer.
           </p>
-          <button className="find-match-button" onClick={() => navigate("/match")}>
-            Encuentra tu Match
-          </button>
+          <button className="find-match-button" onClick={() => navigate("/Hero")}>
+           Encuentra tu Match
+        </button>
         </div>
 
         <main>
