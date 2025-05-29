@@ -34,7 +34,7 @@ function Header() {
         </nav>
 
         <div className="header-icons">
-          <a href="#profile" className="profile-icon" aria-label="Perfil">
+          <a href="/login" className="profile-icon" aria-label="Perfil">
             <span>👤</span>
           </a>
         </div>
