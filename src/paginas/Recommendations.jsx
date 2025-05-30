@@ -41,7 +41,10 @@ function Recommendations() {
 
   return (
     <div className="rec-page">
-      <Navbar />
+      <Navbar onLogout={() => {
+        localStorage.removeItem("user")
+        navigate("/login")
+      }} />
       <div className="rec-container">
         <h2 className="rec-title">Tus Recomendaciones de Juegos</h2>
         {loading && <p className="rec-loading">Cargando recomendaciones...</p>}
@@ -52,6 +55,14 @@ function Recommendations() {
         <div className="rec-grid">
           {recommendations.map((game) => (
             <div key={game.name} className="rec-card">
+              {game.image_url && (
+                <img
+                  src={game.image_url}
+                  alt={game.name}
+                  className="rec-card-image"
+                  style={{ width: "100%", borderRadius: "12px", marginBottom: "1rem", objectFit: "cover", maxHeight: "200px" }}
+                />
+              )}
               <h3 className="rec-card-title">{game.name}</h3>
               <p className="rec-card-info"><strong>Puntuación:</strong> {game.score}</p>
               <p className="rec-card-info"><strong>Géneros:</strong> {game.genres.join(", ")}</p>

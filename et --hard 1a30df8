@@ -1,0 +1,68 @@
+[33mca75064[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: commit (amend): Merge branch 'Luis-branch1'
+[33mb878e24[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{1}: pull --rebase origin main (finish): returning to refs/heads/main
+[33mb878e24[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{2}: pull --rebase origin main (start): checkout b878e2420138f17977d7b99ae83b41c62f937178
+[33mca75064[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{3}: commit (amend): Merge branch 'Luis-branch1'
+[33mb878e24[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{4}: pull --rebase origin main (finish): returning to refs/heads/main
+[33mb878e24[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{5}: pull --rebase origin main (start): checkout b878e2420138f17977d7b99ae83b41c62f937178
+[33mca75064[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{6}: commit (amend): Merge branch 'Luis-branch1'
+[33mb878e24[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{7}: pull --rebase origin main (finish): returning to refs/heads/main
+[33mb878e24[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{8}: pull --rebase origin main (start): checkout b878e2420138f17977d7b99ae83b41c62f937178
+[33m1a30df8[m HEAD@{9}: commit (amend): MMejorar vistaa
+[33m257e1e0[m HEAD@{10}: commit (amend): ejorar vistaa
+[33mb878e24[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{11}: pull --rebase origin main (finish): returning to refs/heads/main
+[33mb878e24[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{12}: pull --rebase origin main (start): checkout b878e2420138f17977d7b99ae83b41c62f937178
+[33mca75064[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{13}: commit (amend): Merge branch 'Luis-branch1'
+[33mb878e24[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{14}: pull --rebase origin main (finish): returning to refs/heads/main
+[33mb878e24[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{15}: pull --rebase origin main (start): checkout b878e2420138f17977d7b99ae83b41c62f937178
+[33mdfe2d95[m HEAD@{16}: commit (amend): Mejorar vista
+[33mb878e24[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{17}: checkout: moving from Luis-branch1 to main
+[33m07d0bc6[m[33m ([m[1;31morigin/Luis-branch[m[33m, [m[1;32mLuis-branch1[m[33m)[m HEAD@{18}: checkout: moving from main to Luis-branch1
+[33mb878e24[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{19}: commit (merge): Merge branch 'Luis-branch1'
+[33m222fd8a[m[33m ([m[1;32mLuis-branch[m[33m)[m HEAD@{20}: checkout: moving from Luis-branch1 to main
+[33m07d0bc6[m[33m ([m[1;31morigin/Luis-branch[m[33m, [m[1;32mLuis-branch1[m[33m)[m HEAD@{21}: commit: Add FriendsManager component and update routing: implement functionality to manage friends, including adding friends and handling user sessions.
+[33mfd17a2c[m HEAD@{22}: pull --tags origin Luis-branch: Fast-forward
+[33m0cfbbe0[m HEAD@{23}: commit: Refactor Principal component: replace Header and Hero with Navbar and HomePage components
+[33m9ec98ca[m HEAD@{24}: commit: Add Navbar styles: implement new styles for Navbar and intro section, including responsive design and button animations
+[33mdf5f7a8[m HEAD@{25}: commit: Add gameRecommendations CSS file: define styles for game recommendations section layout and design
+[33m34168f6[m HEAD@{26}: commit: Add footer CSS file: define styles for footer layout and design
+[33m92fe364[m HEAD@{27}: commit: Add features CSS file: define styles for features section layout and design
+[33mf86c52f[m HEAD@{28}: commit: Add navigation button for Home in Navbar component
+[33me89bd06[m HEAD@{29}: commit: Add HomePage component: implement main page layout and navigation functionality
+[33m76e4afe[m HEAD@{30}: commit: Refactor GameRecommendations component: clean up code formatting and improve readability
+[33m437f96b[m HEAD@{31}: commit: Refactor Footer component: restructure layout and improve class naming for clarity
+[33ma7ad044[m HEAD@{32}: commit: Refactor Features component: enhance feature descriptions for clarity and improve section header
+[33m602063a[m HEAD@{33}: checkout: moving from Luis-branch to Luis-branch1
+[33m222fd8a[m[33m ([m[1;32mLuis-branch[m[33m)[m HEAD@{34}: checkout: moving from Luis-branch1 to Luis-branch
+[33m602063a[m HEAD@{35}: checkout: moving from Luis-branch to Luis-branch1
+[33m222fd8a[m[33m ([m[1;32mLuis-branch[m[33m)[m HEAD@{36}: checkout: moving from Luis-branch to Luis-branch
+[33m222fd8a[m[33m ([m[1;32mLuis-branch[m[33m)[m HEAD@{37}: checkout: moving from Luis-branch to Luis-branch
+[33m222fd8a[m[33m ([m[1;32mLuis-branch[m[33m)[m HEAD@{38}: checkout: moving from Luis-branch to Luis-branch
+[33m222fd8a[m[33m ([m[1;32mLuis-branch[m[33m)[m HEAD@{39}: merge main: Fast-forward
+[33m602063a[m HEAD@{40}: checkout: moving from main to Luis-branch
+[33m222fd8a[m[33m ([m[1;32mLuis-branch[m[33m)[m HEAD@{41}: commit: Fix import path for GameRecommendations component
+[33mac1ffba[m HEAD@{42}: pull --tags origin main: Fast-forward
+[33m602063a[m HEAD@{43}: checkout: moving from Luis-branch to main
+[33m602063a[m HEAD@{44}: merge main: Fast-forward
+[33m5c7b21e[m HEAD@{45}: checkout: moving from main to Luis-branch
+[33m602063a[m HEAD@{46}: pull --tags origin main: Fast-forward
+[33mf6243ef[m HEAD@{47}: checkout: moving from Luis-branch to main
+[33m5c7b21e[m HEAD@{48}: checkout: moving from Majo to Luis-branch
+[33m27762c2[m[33m ([m[1;32mMajo[m[33m)[m HEAD@{49}: checkout: moving from Luis-branch to Majo
+[33m5c7b21e[m HEAD@{50}: commit: Add UpdateUser component: implement user data update functionality and navigation
+[33mc6e0a79[m HEAD@{51}: checkout: moving from main to Luis-branch
+[33mf6243ef[m HEAD@{52}: checkout: moving from Luis-branch to main
+[33mc6e0a79[m HEAD@{53}: commit: Refactor Profile component: update user game preferences handling and UI
+[33mf5d6d37[m HEAD@{54}: checkout: moving from Majo to Luis-branch
+[33m27762c2[m[33m ([m[1;32mMajo[m[33m)[m HEAD@{55}: checkout: moving from Luis-branch to Majo
+[33mf5d6d37[m HEAD@{56}: commit: Add Profile component: implement user profile editing with game preferences
+[33m2bba6b2[m HEAD@{57}: commit: Refactor SignUp component: remove unused state and preferences handling, update form fields for game preferences
+[33m42f4aba[m HEAD@{58}: pull --tags origin Luis-branch: Fast-forward
+[33m13545f0[m HEAD@{59}: checkout: moving from main to Luis-branch
+[33mf6243ef[m HEAD@{60}: pull --tags origin main: Fast-forward
+[33me367bb2[m HEAD@{61}: pull --tags origin main: Fast-forward
+[33m1e13759[m HEAD@{62}: checkout: moving from Luis-branch to main
+[33m13545f0[m HEAD@{63}: commit: Refactor authentication styles for improved layout and responsiveness
+[33m1e13759[m HEAD@{64}: checkout: moving from main to Luis-branch
+[33m1e13759[m HEAD@{65}: merge Luis-branch: Fast-forward
+[33mf1f34f0[m HEAD@{66}: checkout: moving from Luis-branch to main
+[33m1e13759[m HEAD@{67}: commit: Implement authentication flow with Login and SignUp components in Principal layout

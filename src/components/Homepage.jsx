@@ -10,15 +10,15 @@ function HomePage() {
         <div className="intro-section container">
           <h2>¡Bienvenido a GameMatch!</h2>
           <p>
-            Conéctate con jugadores de todo el mundo y encuentra tu compañero de juego ideal.
+            Conéctate con amigos de todo el mundo.
             <br />
-            ¡Descubre nuevos amigos y comparte la pasión por los videojuegos!
+            ¡Comparte la pasión por los videojuegos!
             <br />
             La forma más fácil y divertida de encontrar tu match gamer.
           </p>
           <button
             className="find-match-button"
-            onClick={() => navigate("/hero")}
+            onClick={() => navigate("/friends")}
           >
             Encuentra tu Match
           </button>

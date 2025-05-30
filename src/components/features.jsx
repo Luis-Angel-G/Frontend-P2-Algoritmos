@@ -9,22 +9,10 @@ function Features() {
       description: "Nuestro algoritmo aprende tus gustos para recomendarte juegos que realmente disfrutarás.",
     },
     {
-      id: 2,
-      icon: "📊",
-      title: "Reseñas Detalladas",
-      description: "Explora análisis a fondo con pros, contras y opiniones de otros jugadores.",
-    },
-    {
-      id: 3,
-      icon: "💰",
-      title: "Alertas de Ofertas",
-      description: "Recibe notificaciones cuando los juegos de tu lista de deseos estén en descuento.",
-    },
-    {
       id: 4,
       icon: "👥",
       title: "Comunidad Activa",
-      description: "Conecta con otros gamers, comparte opiniones y encuentra joyas ocultas.",
+      description: "Conecta con otros gamers y encuentra joyas ocultas.",
     },
     
   ]
