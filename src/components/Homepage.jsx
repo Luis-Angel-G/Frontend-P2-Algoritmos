@@ -19,7 +19,7 @@ function HomePage() {
           </p>
           <button
             className="find-match-button"
-            onClick={() => navigate("/hero")}
+            onClick={() => navigate("/recommendations")}
           >
             Encuentra tu Match
           </button>

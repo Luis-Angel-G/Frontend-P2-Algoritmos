@@ -41,7 +41,10 @@ function Recommendations() {
 
   return (
     <div className="rec-page">
-      <Navbar />
+      <Navbar onLogout={() => {
+        localStorage.removeItem("user")
+        navigate("/login")
+      }} />
       <div className="rec-container">
         <h2 className="rec-title">Tus Recomendaciones de Juegos</h2>
         {loading && <p className="rec-loading">Cargando recomendaciones...</p>}

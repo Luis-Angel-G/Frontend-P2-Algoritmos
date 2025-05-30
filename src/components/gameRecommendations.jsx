@@ -1,6 +1,8 @@
 import '../css/gameRecommendations.css';
+import { useNavigate, Link } from "react-router-dom"
 
 function GameRecommendations() {
+  const navigate = useNavigate();
   const games = [
     {
       id: 1,
@@ -45,7 +47,10 @@ function GameRecommendations() {
         </div>
 
         <div className="view-more">
-          <button className="btn btn-outline">Ver más recomendaciones</button>
+          <button 
+          className="find-match-button"
+          onClick={() => navigate("/recommendations")}
+          >Ver más recomendaciones</button>
         </div>
       </div> {/* Aquí se cierra el div.container */}
     </section>

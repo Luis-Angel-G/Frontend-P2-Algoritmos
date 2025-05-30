@@ -46,6 +46,14 @@ function Navbar({ onLogout }) {
             </button>
           </li>
           <li>
+            <button
+              className="rec-nav-button"
+              onClick={() => navigate("/friends")}
+            >
+              Gestionar Amigos
+            </button>
+          </li>
+          <li>
             <button className="rec-nav-button" onClick={onLogout}>
               Cerrar Sesión
             </button>

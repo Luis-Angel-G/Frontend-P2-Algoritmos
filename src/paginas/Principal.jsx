@@ -9,7 +9,10 @@ import HomePage from '../components/Homepage';
 function Principal() {
   return (
     <div className="app">
-      <Navbar />
+      <Navbar onLogout={() => {
+        localStorage.removeItem("user")
+        navigate("/login")
+      }} />
       <main>
         <HomePage />
         <GameRecommendations />
