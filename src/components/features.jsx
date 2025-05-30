@@ -1,37 +1,40 @@
+
+import '../css/features.css';
 function Features() {
   const features = [
     {
       id: 1,
       icon: "🎯",
       title: "Recomendaciones Personalizadas",
-      description: "Algoritmo que aprende de tus preferencias para recomendarte juegos que realmente te gustarán.",
+      description: "Nuestro algoritmo aprende tus gustos para recomendarte juegos que realmente disfrutarás.",
     },
     {
       id: 2,
       icon: "📊",
       title: "Reseñas Detalladas",
-      description: "Análisis profundos de cada juego con pros, contras y opiniones de la comunidad.",
+      description: "Explora análisis a fondo con pros, contras y opiniones de otros jugadores.",
     },
     {
       id: 3,
       icon: "💰",
       title: "Alertas de Ofertas",
-      description: "Recibe notificaciones cuando los juegos de tu lista de deseos estén en oferta.",
+      description: "Recibe notificaciones cuando los juegos de tu lista de deseos estén en descuento.",
     },
     {
       id: 4,
       icon: "👥",
       title: "Comunidad Activa",
-      description: "Conecta con otros gamers, comparte opiniones y descubre joyas ocultas.",
+      description: "Conecta con otros gamers, comparte opiniones y encuentra joyas ocultas.",
     },
+    
   ]
 
   return (
     <section className="features">
-      <div className="container">
-        <div className="section-header">
-          <h2>¿Por qué GameRecs?</h2>
-          <p>Características que nos hacen únicos</p>
+      <div className="features-container">
+        <div className="features-header">
+          <h2>¿Por qué <span className="highlight">GameRecs</span>?</h2>
+          <p>Descubre lo que hace única a nuestra plataforma</p>
         </div>
 
         <div className="features-grid">
