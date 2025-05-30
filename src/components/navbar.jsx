@@ -16,6 +16,14 @@ function Navbar({ onLogout }) {
           <li>
             <button
               className="rec-nav-button"
+              onClick={() => navigate("/")}
+            >
+              Inicio
+            </button>
+          </li>
+          <li>
+            <button
+              className="rec-nav-button"
               onClick={() => navigate("/recommendations")}
             >
               Recomendaciones
