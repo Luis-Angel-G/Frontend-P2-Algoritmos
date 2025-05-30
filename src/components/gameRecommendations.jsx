@@ -1,3 +1,5 @@
+import '../css/gameRecommendations.css';
+
 function GameRecommendations() {
   const games = [
     {
@@ -42,12 +44,10 @@ function GameRecommendations() {
           <p>Nuestras mejores selecciones para ti esta semana</p>
         </div>
 
-        
-
         <div className="view-more">
           <button className="btn btn-outline">Ver más recomendaciones</button>
         </div>
-      </div>
+      </div> {/* Aquí se cierra el div.container */}
     </section>
   )
 }

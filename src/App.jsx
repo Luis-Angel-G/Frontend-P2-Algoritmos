@@ -17,7 +17,7 @@ function App() {
         <Route path="/update-user" element={<UpdateUser />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App
