@@ -26,7 +26,15 @@ function Navbar({ onLogout }) {
               className="rec-nav-button"
               onClick={() => navigate("/profile")}
             >
-              Editar Perfil
+              Actualizar Juegos
+            </button>
+          </li>
+          <li>
+            <button
+              className="rec-nav-button"
+              onClick={() => navigate("/update-user")}
+            >
+              Editar Usuario
             </button>
           </li>
           <li>
