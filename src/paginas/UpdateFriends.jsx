@@ -7,7 +7,6 @@ import "../css/Profile.css"
 
 function FriendsManager() {
   const [user, setUser] = useState(null)
-  const [amigos, setAmigos] = useState([])
   const [nuevoAmigo, setNuevoAmigo] = useState("")
   const [msg, setMsg] = useState("")
   const [loading, setLoading] = useState(false)
@@ -20,24 +19,7 @@ function FriendsManager() {
       return
     }
     setUser(storedUser)
-    // Cargar amigos desde la base de datos
-    fetchAmigos(storedUser.correo)
   }, [navigate])
-
-  // Función para obtener amigos desde el backend
-  const fetchAmigos = async (correo) => {
-    try {
-      const res = await fetch(`http://127.0.0.1:5050/api/v1/users/${encodeURIComponent(correo)}/friends`)
-      if (res.ok) {
-        const data = await res.json()
-        setAmigos(data.amigos || [])
-      } else {
-        setAmigos([])
-      }
-    } catch {
-      setAmigos([])
-    }
-  }
 
   const handleAgregar = async (e) => {
     e.preventDefault()
@@ -60,8 +42,6 @@ function FriendsManager() {
       if (response.ok) {
         setMsg("Amigo agregado correctamente")
         setNuevoAmigo("")
-        // Recargar amigos desde la base de datos
-        fetchAmigos(user.correo)
       } else {
         setMsg(data.error || "Error al agregar amigo")
       }
@@ -104,15 +84,6 @@ function FriendsManager() {
             {loading ? "Agregando..." : "Agregar Amigo"}
           </button>
         </form>
-        <h3 style={{ textAlign: "center", marginBottom: "1rem" }}>Tus amigos</h3>
-        <ul style={{ listStyle: "none", padding: 0 }}>
-          {amigos.length === 0 && <li style={{ textAlign: "center" }}>No tienes amigos agregados.</li>}
-          {amigos.map((amigo) => (
-            <li key={amigo} style={{ textAlign: "center", marginBottom: "0.5rem" }}>
-              <span>{amigo}</span>
-            </li>
-          ))}
-        </ul>
         {msg && (
           <div className={`profile-message ${msg.includes("correctamente") ? "success" : "error"}`}>
             {msg}
